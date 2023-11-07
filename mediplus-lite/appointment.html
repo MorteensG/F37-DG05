@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lotus Health Clinic Appointment Booking</title>
+
+     <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Title -->
+    <title>Lotus Health Centre Online Booking System</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="css/icofont.css">
+    
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="css/datepicker.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+		
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctor_profiles.html">Doctor Profiles</a></li>
+                <li><a href="appointment_booking.html">Appointment Booking</a></li>
+                <li><a href="rescheduling.html">Rescheduling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Select Doctor Section -->
+    <section id="select-doctor">
+        <h2>Select Doctor</h2>
+        <!-- Example of one doctor profile; repeat for others -->
+        <article class="doctor-profile">
+            <img src="doctor_placeholder.jpg" alt="Dr. John Doe">
+            <h3>Dr. John Doe</h3>
+            <p>Specialty: Cardiology<br>Rating: 4.5</p>
+            <button>Book Appointment</button>
+        </article>
+        <!-- Add other doctor profiles similarly -->
+    </section>
+
+    <!-- Appointment Date and Time Section -->
+    <section id="appointment-date-time">
+        <h2>Choose Appointment Date and Time</h2>
+        <form action="confirm_appointment.html" method="post">
+            <label for="appointment-date">Select Appointment Date</label>
+            <input type="date" id="appointment-date" name="appointment_date" required>
+            
+            <label for="appointment-time">Select Appointment Time</label>
+            <select id="appointment-time" name="appointment_time" required>
+                <option value="9am">9:00 AM - 10:00 AM</option>
+                <option value="10am">10:00 AM - 11:00 AM</option>
+                <!-- Add other time slots -->
+            </select>
+
+            <input type="submit" value="Confirm Appointment">
+        </form>
+    </section>
+
+    <!-- Confirmation Section -->
+    <section id="confirm-appointment">
+        <h2>Confirm Appointment</h2>
+        <form action="booking_confirmation.html" method="post">
+            <div class="patient-details">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="reason">Reason for Appointment</label>
+                <textarea id="reason" name="reason" required></textarea>
+
+                <input type="submit" value="Confirm Appointment">
+            </div>
+        </form>
+    </section>
+
+    <!-- Reschedule Section for Patient -->
+    <section id="patient-reschedule">
+        <h2>Patient Reschedule</h2>
+        <!-- Patient's appointments list -->
+        <!-- Each appointment would be generated dynamically with PHP -->
+    </section>
+
+    <!-- Reschedule Section for Doctor -->
+    <section id="doctor-reschedule">
+        <h2>Doctor Reschedule</h2>
+        <!-- Doctor's appointments list -->
+        <!-- Each appointment would be generated dynamically with PHP -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Lotus Health Clinic, All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
